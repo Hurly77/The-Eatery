@@ -17,16 +17,9 @@ const Layout = ({ children }) => {
 				name="authors"
 				content="Cameron Leverett and Tyler Jones"
 			/>
-			<div>
+			<div className="w-screen">
 				<Navbar />
-				<div
-					style={{
-						// minHeight: '50vh',
-						height: 'max-content',
-					}}
-					className="">
-					{children}
-				</div>
+				<div className="">{children}</div>
 				<Footer />
 			</div>
 		</>

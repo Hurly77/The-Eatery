@@ -22,6 +22,7 @@ class MyDocument extends Document {
 						rel="stylesheet"
 					/>
 					<script
+						async
 						src="https://kit.fontawesome.com/7fe238b80c.js"
 						crossOrigin="anonymous"
 					/>

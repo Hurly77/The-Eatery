@@ -1,5 +1,6 @@
 import Socials from '@/ui/socials';
 import media from '@/data/media';
+import Image from 'next/image';
 
 const Footer = () => {
 	return (
@@ -18,8 +19,10 @@ const Footer = () => {
 				<div className="">
 					<h1 className="flex flex-row-reverse justify-end items-end text-6xl">
 						The{<br />} Eatery
-						<img
-							src="images/eat-2.png"
+						<Image
+							src="/images/eat-2.png"
+							width={300}
+							height={300}
 							className="w-40"
 							alt="Big Burger"
 						/>

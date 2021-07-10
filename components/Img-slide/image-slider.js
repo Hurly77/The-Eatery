@@ -47,12 +47,11 @@ const ImageSlider = () => {
 						key={idx}
 						className="flex justify-center"
 						style={idx === current ? fadeIn : fadeOut}>
-						<img
+						<Image
+							width={idx === current ? 1350 : 0}
+							height={idx === current ? 650 : 0}
 							src={slide}
 							alt="hello"
-							className={
-								idx === current ? 'w-full' : 'hidden'
-							}
 						/>
 					</div>
 				);

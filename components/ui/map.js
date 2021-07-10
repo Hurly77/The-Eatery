@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Loader } from '@googlemaps/js-api-loader';
 
-const Map = () => {
+const Map = ({ gKey }) => {
 	const gmap = useRef(null);
 
 	const twind = {
@@ -9,7 +9,7 @@ const Map = () => {
 	};
 	useEffect(() => {
 		const loader = new Loader({
-			apiKey: 'AIzaSyD-Mk7KnSU6unxi_PlKRoC6x9vHq1fV0y8',
+			apiKey: gKey,
 			version: 'weekly',
 		});
 
@@ -21,7 +21,7 @@ const Map = () => {
 				zoom: 10,
 			});
 		});
-	}, []);
+	}, [gKey]);
 
 	return (
 		<div

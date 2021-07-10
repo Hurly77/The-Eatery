@@ -9,6 +9,7 @@ const LogoLink = ({ hidden }) => {
 				className="flex lg:flex-1 h-full p-3 self-center">
 				<Image
 					src="/images/eat-2.png"
+					alt="Eatery-Logo"
 					layout={'fixed'}
 					width={75}
 					height={75}

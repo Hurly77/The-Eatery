@@ -1,6 +1,6 @@
 import { Map, Find } from '@/ui/index';
 
-const Locations = () => {
+const Locations = ({ api }) => {
 	const locations = [{ address: '22 B baker st.' }];
 
 	const handleClick = (e) => {
@@ -17,7 +17,7 @@ const Locations = () => {
 					btnName="Find"
 					func={(e) => handleClick(e)}
 				/>
-				<Map />
+				<Map gKey={api} />
 			</div>
 			<div>
 				{locations.map((location, idx) => {
@@ -30,6 +30,14 @@ const Locations = () => {
 			</div>
 		</>
 	);
+};
+
+export const getStaticProps = async () => {
+	const gKey = process.env.GOOGLE_API_KEY;
+
+	return {
+		props: { api: gKey },
+	};
 };
 
 export default Locations;

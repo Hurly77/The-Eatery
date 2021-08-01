@@ -6,7 +6,7 @@ const LogoLink = ({ hidden }) => {
 		<Link href="/">
 			<a
 				hidden={hidden}
-				className="flex lg:flex-1 h-full p-3 self-center">
+				className="flex lg:flex-1 p-3 self-center">
 				<Image
 					src="/images/eat-2.png"
 					alt="Eatery-Logo"
